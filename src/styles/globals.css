@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -7,4 +8,14 @@ html {
 body {
     margin: 0;
     min-width: 320px;
+}
+
+:root {
+    font-family: "Geist", sans-serif;
+    --background: #020617;
+    --surface: #0f172a;
+    --card: #111827;
+    --text: #f8fafc;
+    --muted: #94a3b8;
+    --primary: #2563eb;
 }
