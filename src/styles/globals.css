@@ -1,13 +1,21 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@import "./theme.css";
+
 
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
     min-width: 320px;
+    margin: 0;
+
+    background: var(--color-background);
+    color: var(--color-text);
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 :root {

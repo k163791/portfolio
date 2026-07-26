@@ -10,7 +10,12 @@ export const Container: React.FC<ContainerProps> = ({
   className,
 }: ContainerProps) => {
   return (
-    <div className={clsx('mx-auto w-full max-w-7xl px-6 lg:px-8', className)}>
+    <div
+      className={clsx('mx-auto w-full px-6 lg:px-8', className)}
+      style={{
+        maxWidth: 'var(--container-width)',
+      }}
+    >
       {children}
     </div>
   );
